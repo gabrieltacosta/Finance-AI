@@ -58,7 +58,7 @@ export const TransactionColumns: ColumnDef<Transaction>[] = [
     header: "",
     cell: ({ row: { original: transaction } }) => {
       return (
-        <div className="space-x-1">
+        <div className="grid space-x-1 sm:flex">
           <EditTransactionButton transaction={transaction} />
           <DeleteTransactionButton transactionId={transaction.id} />
         </div>
