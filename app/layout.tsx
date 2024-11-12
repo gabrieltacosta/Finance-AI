@@ -27,7 +27,7 @@ export default function RootLayout({
             baseTheme: dark,
           }}
         >
-          <div className="flex h-full w-auto flex-col">{children}</div>
+          <div className="flex xl:w-auto flex-col xl:h-full">{children}</div>
         </ClerkProvider>
         <Toaster />
       </body>
