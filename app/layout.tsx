@@ -12,9 +12,6 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   title: "Finance AI",
   description: "Plataforma de gestão financeira com AI",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
