@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import "./globals.css";
 import { dark } from "@clerk/themes";
+import { Toaster } from "./_components/ui/sonner";
 
 const mulish = Mulish({
   subsets: ["latin-ext"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         >
           <div className="flex h-full w-auto flex-col">{children}</div>
         </ClerkProvider>
+        <Toaster />
       </body>
     </html>
   );
